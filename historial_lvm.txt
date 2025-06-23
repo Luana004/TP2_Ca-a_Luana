@@ -1,0 +1,83 @@
+    1  ls -l
+    2  vagrant halt
+    3  exit
+    4  pwd
+    5  ls -l
+    6  exit
+    7  fdisk -l
+    8  sudo fdisk l
+    9  sudo fdisk -l
+   10  ls -l
+   11  exit
+   12  ssh-keygen -t ed25519
+   13  exit
+   14  cd repigot
+   15  pwd
+   16  sudo passwd Luana
+   17  ssh-keygen -t ed25519
+   18  y5na
+   19  ls -l
+   20  pwd
+   21  ssh-keygen -t ed25519
+   22  cat $HOME/.ssh/*.pub
+   23  git clone git@github.com:Luana004/TP2_Ca-a_Luana.git
+   24  sudo fdisk -l
+   25  sudo fdisk /dev/sdd
+   26  free
+   27  free -h
+   28  sudo mkswap /dev/sdd1
+   29  free -h
+   30  sudo swapon /dev/sdd1
+   31  free -h
+   32  swapon -s
+   33  cat/proc/swaps
+   34  cat /proc/swaps
+   35  sudo fdisk -l
+   36  sudo fdik /dev/sdc
+   37  sudo fdisk /dev/sdc
+   38  p
+   39  sudo fdisk /dev/sdc
+   40  sudo fdisk /dev/sdd
+   41  sudo wipefs -a /dev/sdc1
+   42  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   43  pvs
+   44  sudo pvs
+   45  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   46  sudo vgs
+   47  sudo pvs
+   48  sudo vgcreate vg_web /dev/sdc2
+   49  pvs
+   50  sudo pvs
+   51  sudo lvcreate -L 1G vg_web -n lv_web1
+   52  sudo lvcreate -L 512M vg_web -n lv_web2
+   53  sudo lvcreate -L 512M vg_web -n lv_web3
+   54  sudo lvs
+   55  sudo pvs
+   56  sudo fdisk -l
+   57  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   58  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   59  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   60  sudo fdisk -l
+   61  ls -l
+   62  cd TP2_Ca-a_Luana/
+   63  git add
+   64  git add .
+   65  git status
+   66  git commit -m "comentario"
+   67  git config --global user.email "Luanacana64@gmail.com"
+   68  git config --global user.name "Luana004"
+   69  git commit -m "comentario"
+   70  git push
+   71  sudo vgs > vgs.txt
+   72  git status
+   73  git add .
+   74  git status
+   75  git commit -m "comentario"
+   76  git push
+   77  sudo lvs > lvs.txt 
+   78  git status
+   79  git add .
+   80  git status
+   81  git commit -m "comentario"
+   82  git push
+   83  history > historial_lvm.txt
